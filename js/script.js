@@ -1,11 +1,12 @@
 var arr = [];
 document.write("<div class='wrap'>");
 
-for (var i = 1; i <= 5; i++) {
+for (var i = 0; i <= 5; i++) {
     arr[i] = [];
-    for (var j = 1; j <= 5; j++) {
+    document.write("<br />");
+    for (var j = 0; j <= 5; j++) {
         arr[i][j] = i * j;
-        document.write("<div class='block'>" + arr[i][j] + "</div>");  // массив arr
+        document.write("<span class='item'>" + arr[i][j] + "</span>");  // массив arr
         if (arr[i][j] % 2 == 0) {
             //console.log(arr[i][j]);  // четные
         }
@@ -14,12 +15,13 @@ for (var i = 1; i <= 5; i++) {
         }
     }
 }
+//console.log(arr);
 document.write("</div>");
 
 var r = 0;
 
 for (var i = 1; i < arr.length; i++) {
-    //console.log(arr[i][i]); // главная диагональ
+    console.log(arr[i][i]); // главная диагональ
 }
 
 /** arr2 **/
