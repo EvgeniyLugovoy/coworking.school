@@ -59,11 +59,19 @@ var invArr = [];
 
 for (var i = 1; i <= arr3.length; i++) {
     invArr[i-1] = [];
-    invArr[i-1] = arr3[arr3.length - i];
+    invArr[i-1] = arr3[arr3.length - i]; // инверсия i
     document.write("<br />");
     for (var j = 1; j <= arr3.length; j++) {
-        //invArr[i-1][j-1] = arr3[arr3.length - i][arr3.length - j];
-        document.write(invArr[i-1][j-1]);  // массив arr
+        //document.write(invArr[i-1][j-1]);
+    }
+}
+
+for (var i = 1; i <= arr3.length; i++) {
+    invArr[i-1] = [];
+    document.write("<br />");
+    for (var j = 1; j <= arr3.length; j++) {
+        invArr[i-1][j-1] = arr3[arr3.length - i][arr3.length - j];// инверсия всего массива
+        document.write(invArr[i-1][j-1]);
     }
 }
 
