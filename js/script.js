@@ -31,7 +31,7 @@ var arr2 = [],
     arrInversed = [];
 
 for (var i = 1; i <= 100; i++) {
-    arr2[i] = i;
+    arr2[i - 1] = i;
     arrInversed = arr2;
     //console.log(arr2[i]); // элементы массива arr2
 }
@@ -40,18 +40,18 @@ for (var i = 1; i <= 100; i++) {
 
 
 for (var i = 1; i <= arr2.length; i++) {
-   arr2[arr2.length - i] = i - 1;
+   arr2[arr2.length - i] = i;
 }
 //console.log(arr2);
 
 var arr3 = [];
 var a = 1;
 for (var i = 1; i <= 5; i++) {
-    arr3[i] = [];
+    arr3[i-1] = [];
     document.write("<br />");
     for (var j = 1; j <= 5; j++) {
-        arr3[i][j-1] = a++;
-	//arr3[arr3.length - i] = i - 1;
-        document.write(arr3[i][j-1]);  // массив arr
+        arr3[i-1][j-1] = a++;
+        document.write(arr3[i-1][j-1]);  // массив arr
     }
 }
+console.log(arr3);
