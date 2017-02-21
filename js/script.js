@@ -51,7 +51,24 @@ for (var i = 1; i <= 5; i++) {
     document.write("<br />");
     for (var j = 1; j <= 5; j++) {
         arr3[i-1][j-1] = a++;
-        document.write(arr3[i-1][j-1]);  // массив arr
+        //document.write(arr3[i-1][j-1]);  // массив arr
     }
 }
-console.log(arr3);
+
+var invArr = [];
+
+for (var i = 1; i <= arr3.length; i++) {
+    invArr[i-1] = [];
+    invArr[i-1] = arr3[arr3.length - i];
+    document.write("<br />");
+    for (var j = 1; j <= arr3.length; j++) {
+        //invArr[i-1][j-1] = arr3[arr3.length - i][arr3.length - j];
+        document.write(invArr[i-1][j-1]);  // массив arr
+    }
+}
+
+console.log(invArr);
+
+
+
+
