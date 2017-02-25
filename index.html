@@ -6,9 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<button>Click</button>
+<!--<button>Click</button>
 <form action="">
     <input type="text">
 </form>
@@ -32,8 +37,24 @@
     <li>wef</li>
     <li></li>
     <li></li>
-</ul>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/script.js"></script>
+</ul>-->
+<form action="" id="convert">
+    <input type="number">
+    <select name="" id="">
+        <option value="27.3">USD</option>
+        <option value="29.5">EUR</option>
+        <option value="0.48">RUR</option>
+    </select>
+</form>
+<h1></h1>
+<form action="" id="calc">
+    <label>Текущие показания счетчика<input type="number" id="current"></label>
+    <label>Предыдущие показания счетчика<input type="number" id="prev"></label>
+    <label>Разность<input type="number" id="diff"></label>
+    <label>Стоимость электроэнергии<input type="number" id="result" readonly> грн.</label>
+</form>
+
+<script dever src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script defer src="js/converter.js"></script>
 </body>
 </html>
