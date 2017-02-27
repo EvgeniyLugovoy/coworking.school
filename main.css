@@ -58,7 +58,7 @@ i {
     color: #ee6c4f;
 }
 
-input, textarea {
+input, textarea, select {
     display: block;
     width: 300px;
     box-sizing: border-box;
@@ -313,3 +313,68 @@ nav li:hover {
 #controls .minus:before {
     transform: rotate(180deg);
 }
+
+.illuminate-wrap {
+    padding: 0 30px;
+}
+
+.illuminate-wrap p {
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+.res {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.phone-wrap {
+    padding-top: 158px;
+    width: 700px;
+    height: 700px;
+    background: url("phone.png") center / cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.phone-wrap textarea {
+    margin-top: 50px;
+    width: 190px;
+    height: 130px;
+    margin-bottom: 110px;
+    background: none;
+    border: none;
+    padding: 20px 22px 20px 20px;
+}
+
+.phone-wrap textarea:focus {
+    outline: none;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 195px;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.keyboard button {
+    width: 60px;
+    height: 30px;
+    order: 0;
+    margin: 8px 0;
+}
+
+.keyboard button:first-of-type {
+    order: 1;
+}
+
+.keyboard button:nth-child(11) {
+    order: 1;
+}
+
