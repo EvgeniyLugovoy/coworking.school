@@ -375,5 +375,24 @@
     echo '<br>' . getArr('Once upon a time I travelled with Gendlaf');
 
 ?>
+
+<form action="register.php" method="post" enctype="multipart/form-data">
+    <input type="text" name="firstName" placeholder="firstName">
+    <input type="text" name="lastName" placeholder="lastName">
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="password">
+    <select name="country" id="">
+        <option value="AU">Australia </option>
+        <option value="JP">Japan</option>
+        <option value="SP">Spain</option>
+        <option value="UA">Ukraine</option>
+    </select>
+    <input type="radio" name="gender" value="male">male
+    <input type="radio" name="gender" value="female">female
+    <input type="submit" value="Submit">
+    <input type="file" name="photo[]">
+    <input type="file" name="photo[]">
+    <input type="file" name="photo[]">
+</form>
 </body>
 </html>
