@@ -38,7 +38,6 @@ $fileName = $file['name'];
 $today = date('Y-m-d-H-i-s');
 $folderName = 0;
 for ($i = 0; $i < count($fileName); $i++) {
-    global $x;
     $folderName += 1;
     $fileExt = explode('.', $fileName[$i]);
     $fileExt = array_pop($fileExt);
