@@ -33,17 +33,16 @@ if (formValidate($data) === true) {
 }
 
 //3.
-/*$file = $_FILES['photo'];
+$file = $_FILES['photo'];
 $fileName = $file['name'];
-$fileExt = explode('.', $fileName);
-$fileExt = array_pop($fileExt);
-
 $today = date('Y-m-d-H-i-s');
-
-
-
-for ($i = 0; $i < count($file); $i++) {
-    //$x = $file[$i];
-    //move_uploaded_file($file['tmp_name'], "images/{$today}.{$fileExt}");
-    mkdir("/images/1", 0700, true);
-}*/
+$folderName = 0;
+for ($i = 0; $i < count($fileName); $i++) {
+    global $x;
+    $folderName += 1;
+    $fileExt = explode('.', $fileName[$i]);
+    $fileExt = array_pop($fileExt);
+    echo '<br>';
+    move_uploaded_file($file['tmp_name'][$i], "images/{$folderName}/" . "{$today}.{$fileExt}");
+    // хотел, чтобы папки сами генерились, но не победил SELinux ;(
+}
